@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>Laskin.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">JaCoCoverage analysis of project &quot;Laskin&quot; (powered by JaCoCo from EclEmma)</a> &gt; <a href="index.source.html" class="el_package">laskin</a> &gt; <span class="el_source">Laskin.java</span></div><h1>Laskin.java</h1><pre class="source lang-java linenums">package laskin;
+
+<span class="fc" id="L3">public class Laskin {</span>
+
+    private static int tulos;  // Muuttuja tulokselle // Muuttuja tulokselle
+    
+    public void nollaa() {     // Nollaa tuloksen
+<span class="nc" id="L8">        tulos = 0;</span>
+        if (true) {
+<span class="nc" id="L10">            System.out.println(&quot;Tosi on tosi&quot;);</span>
+        } else {
+            System.out.println(&quot;Tosi ei ole epätosi&quot;);
+        }
+<span class="nc" id="L14">    }</span>
+
+    public int annaTulos() {
+<span class="nc" id="L17">        return tulos;</span>
+    }
+    
+    public void lisaa(int n) {
+<span class="nc" id="L21">        tulos = tulos + n;</span>
+<span class="nc" id="L22">    }</span>
+
+    public void vahenna(int n) {
+<span class="nc" id="L25">        tulos = tulos - 1;     // Bugi</span>
+<span class="nc" id="L26">    }</span>
+
+    public void kerro(int n) {
+        // Ei vielä toteutettu
+<span class="nc" id="L30">    }</span>
+
+    public void jaa(int n) {
+<span class="nc" id="L33">        tulos = tulos / n;</span>
+<span class="nc" id="L34">    }</span>
+
+    public void nelio(int n) {
+<span class="nc" id="L37">        tulos = n * n;</span>
+<span class="nc" id="L38">    }</span>
+
+    public void neliojuuri(int n) {
+<span class="nc" id="L41">        for (;;) ;           // Bugi</span>
+    }
+    
+    public void virtaON() {
+        // Tähän voisi laittaa alkutoimet
+<span class="nc" id="L46">        tulos = 0;</span>
+<span class="nc" id="L47">    }</span>
+
+    public void virtaOFF() {
+        // Tähän voisi laittaa lopputoimet
+<span class="nc" id="L51">    }</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.5.201505241946</span></div></body></html>
